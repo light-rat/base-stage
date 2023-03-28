@@ -1,3 +1,16 @@
-#
-out
+# Project
+.idea
+.vscode
+
+# vendor
+/vendor/*
+!/vendor/vendor.json
+/log/*
+cli
+.*_*_swagger.json
+./settings/config.json
+# mod
+go.sum
+.DS_Store
+/consul
 *.exe
