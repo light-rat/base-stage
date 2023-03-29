@@ -1,9 +1,15 @@
 package manager
 
-func RedisSet() {
+import (
+	"stage/http_server/request"
+	"stage/internal/redis"
+)
 
+func RedisSet(params request.KeyValueRequest) error {
+	err := redis.RedisSet(params.Key, params.Value)
+	return err
 }
 
-func RedisUnset() {
+func RedisUnset(params request.KeyValueRequest) {
 
 }
