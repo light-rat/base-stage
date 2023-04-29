@@ -1,13 +1,16 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"stage/http_server/routes"
 	"stage/internal/mysql"
+	"stage/internal/redis"
+
+	"github.com/gin-gonic/gin"
 )
 
 func init() {
 	mysql.Init()
+	redis.Init()
 }
 
 func main() {
