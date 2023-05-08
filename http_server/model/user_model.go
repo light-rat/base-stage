@@ -1,9 +1,6 @@
 package model
 
-type
-
-
-User struct {
+type User struct {
 	Id    int `gorm:"primary_key"`
 	Name  string
 	Home  string
